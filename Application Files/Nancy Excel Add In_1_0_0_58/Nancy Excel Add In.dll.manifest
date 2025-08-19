@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Nancy Excel Add In.dll" version="1.0.0.9" publicKeyToken="9535e1ba8f836326" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Nancy Excel Add In.dll" version="1.0.0.58" publicKeyToken="9535e1ba8f836326" language="neutral" processorArchitecture="msil" type="win32" />
   <description xmlns="urn:schemas-microsoft-com:asm.v1">Nancy Excel Add In</description>
   <application />
   <entryPoint>
@@ -48,6 +48,11 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.CSharp" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="Microsoft.Office.Tools" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
@@ -68,7 +73,22 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualBasic" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.Runtime" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="PresentationCore" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="PresentationFramework" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -94,6 +114,11 @@
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="System.Data.DataSetExtensions" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Design" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -147,6 +172,11 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AngleSharp.dll" size="960512">
       <assemblyIdentity name="AngleSharp" version="1.3.0.0" publicKeyToken="E83494DCDC6D31EA" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -171,6 +201,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroContainsTextBox.dll" size="20992">
+      <assemblyIdentity name="MetroContainsTextBox" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>y25knHd47bizkqGm+37OP3JJzddAqDMIZYxaXxdkH9o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" size="32664">
       <assemblyIdentity name="Microsoft.Office.Tools.Common.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -183,14 +225,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nancy Excel Add In.dll" size="868352">
-      <assemblyIdentity name="Nancy Excel Add In" version="1.0.0.9" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nancy Excel Add In.dll" size="2843648">
+      <assemblyIdentity name="Nancy Excel Add In" version="1.0.0.58" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Mv2UMAvBDS+gBTk1bG6FOZhYorrPNK7aYsdNjf+XdFM=</dsig:DigestValue>
+        <dsig:DigestValue>o/FYjpATBzC6UOvEBQPPUlFL4ZiIMgTTAZZh11p16FY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NancyControls.dll" size="28160">
+      <assemblyIdentity name="NancyControls" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5JJ9uhBoaV8n+pTy8FIO3UaFJ2u+GP1OufY8ZBgWLRQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -203,6 +257,30 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>4eJ697B+7t9c5xqSVfBCKBam/FhJpIPGcU4bRyBE+p0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QRCoder.dll" size="154112">
+      <assemblyIdentity name="QRCoder" version="1.6.0.0" publicKeyToken="C4ED5B9AE8358A28" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WuJ5LHYmKUOk40FAu9ZLKqfZ7VxYImgMANnqoyJBJoA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReaLTaiizor.dll" size="3807744">
+      <assemblyIdentity name="ReaLTaiizor" version="3.7.8.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jr15ZLGzxNIPoJcMK4DjXEElBgIvCBKI9thqWcEVzhs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -266,20 +344,20 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Nancy Excel Add In.dll.config" size="453">
+  <file name="Nancy Excel Add In.dll.config" size="1225">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>aXtzoxSmAG97QDf2tLIbRdZuYR84mM4vO5VZc/sf2cM=</dsig:DigestValue>
+      <dsig:DigestValue>6ZuJFgJQdzLEMqfmYrs1tL7sWcT8SNd6q3hUSn9KIlU=</dsig:DigestValue>
     </hash>
   </file>
   <vstav3:addIn xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
     <vstav3:entryPointsCollection>
       <vstav3:entryPoints>
         <vstav3:entryPoint class="Nancy_Excel_Add_In.ThisAddIn">
-          <assemblyIdentity name="Nancy Excel Add In" version="1.0.0.9" language="neutral" processorArchitecture="msil" />
+          <assemblyIdentity name="Nancy Excel Add In" version="1.0.0.58" language="neutral" processorArchitecture="msil" />
         </vstav3:entryPoint>
       </vstav3:entryPoints>
     </vstav3:entryPointsCollection>
@@ -296,4 +374,4 @@
       </vstov4:customizations>
     </vstav3:application>
   </vstav3:addIn>
-<publisherIdentity name="CN=LAPTOP-2O28L0ML\ADMIN" issuerKeyHash="c156ac8c01e801a1e98c501462b0d740cba80028" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>E0jmD9WTeICyWC1sdcIj4U436w3VOlxEV+zMkSJbeC4=</DigestValue></Reference></SignedInfo><SignatureValue>RZduLX8kn8aOnGU62nD6sq2bkpjlJwhAFWoUy6C7vHyu980gQlVDibFst/8d9UQTtaTWZRp1nq8Mn//Ooeaq+FLqb8Wbl/1cz1hhHKDZAg1PFFALELxuUaUkHt6dDCo5p0zZasBIpi+9XzPZrYFRNiWSiLIzAzkaSYwpZ4OAKgY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uHlYsu0k4UPQoKcf2hX1Ab6Ctc1ZAh78YvXdxXed5a9Fi4542VZxKKw68E7KiestmwowZ5iRM6oc5jW0IZFj/lNslXPOVHmzGj6MTAahAPvNVF/KrR8CKOnoJXAht/k6wvNqpgM6NzRoMGQDW7pOPVTLzsLL5GzeEl5K7OJhLOE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2e785b2291ccec57445c3ad50deb374ee123c2756c2d58b2807893d50fe64813" Description="" Url=""><as:assemblyIdentity name="Nancy Excel Add In.dll" version="1.0.0.9" publicKeyToken="9535e1ba8f836326" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-2O28L0ML\ADMIN</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>EGOkYX7ERbDCbIWs118E96s2VX9xahPe4H+qhC2X0Hs=</DigestValue></Reference></SignedInfo><SignatureValue>VJux9QW2PaPDoJ+d/AQWB2YYpU79u7bgRbp4Otw3LAXt28ehg+6zKQxePN2fb2c7zJQ+7RrJj5f6/Ay7C9EQcFhw1k+l3ld5gVF8TJj1L5DSHg+w6/QmxVFpeSp4mkkg10zp92U+1ru/b3Pi+aX9vfiooevBAMA5AWc7SGdfd0g=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uHlYsu0k4UPQoKcf2hX1Ab6Ctc1ZAh78YvXdxXed5a9Fi4542VZxKKw68E7KiestmwowZ5iRM6oc5jW0IZFj/lNslXPOVHmzGj6MTAahAPvNVF/KrR8CKOnoJXAht/k6wvNqpgM6NzRoMGQDW7pOPVTLzsLL5GzeEl5K7OJhLOE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQY8ezUt+3yIRNowoKk3DnNjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQAyAE8AMgA4AEwAMABNAEwAXABBAEQATQBJAE4wHhcNMjUwNzA5MDgxMTMwWhcNMjYwNzA5MTQxMTMwWjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQAyAE8AMgA4AEwAMABNAEwAXABBAEQATQBJAE4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALh5WLLtJOFD0KCnH9oV9QG+grXNWQIe/GL13cV3neWvRYuOeNlWcSisOvBOyonrLZsKMGeYkTOqHOY1tCGRY/5TbJVzzlR5sxo+jEwGoQD7zVRfyq0fAijp6CVwIbf5OsLzaqYDOjc0aDBkA1u6Tj1Uy87Cy+Rs3hJeSuziYSzhAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAkVRTKWDlQ8bDCEO/jD7wk38yHbjgrH4H8ud+CGipFCw6iJSe0vrbARyrq8OX5wBYaCGepLOXu7Wrc8U0ato/Lo5XMq62h6z5vIkbfGoPVlGQ7F2bWjRQXr8ciZJ4rYM5HAZnYsX7r2kNDX+/HTWOXEitiU2n88S3yCz9FwWbGZk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=LAPTOP-2O28L0ML\ADMIN" issuerKeyHash="c156ac8c01e801a1e98c501462b0d740cba80028" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>RDIfFaGQe3q2pgS+y+gsgwbmbGhaCZVhk58wuHwqviE=</DigestValue></Reference></SignedInfo><SignatureValue>DDhy1wh1MSzaZn9zA9UtAwgsXx5gNw00DIK2Pp93tBRtro9e1L8o7AXXLVxI6Bzq0mAaWPaLou9fxz3LAMuxnpB7v3baZ35hVpht0gcOLXw0YuWptR1sbw2y+2u4VRcGVcd2EICDdmBKx5dI8rJ5qeoGli59Qnn/TiEzGbhxwaM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uHlYsu0k4UPQoKcf2hX1Ab6Ctc1ZAh78YvXdxXed5a9Fi4542VZxKKw68E7KiestmwowZ5iRM6oc5jW0IZFj/lNslXPOVHmzGj6MTAahAPvNVF/KrR8CKOnoJXAht/k6wvNqpgM6NzRoMGQDW7pOPVTLzsLL5GzeEl5K7OJhLOE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="21be2a7cb8309f936195095a686ce606832ce8cbbe04a6b67a7b90a1151f3244" Description="" Url=""><as:assemblyIdentity name="Nancy Excel Add In.dll" version="1.0.0.58" publicKeyToken="9535e1ba8f836326" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-2O28L0ML\ADMIN</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>4O7xpYbUgxwV5qFfsRNYtqM81fGw3k/sWg+4NNQt4Tc=</DigestValue></Reference></SignedInfo><SignatureValue>n0WGDqK2vfDwcKN1tylV72nzGGrxHsJHkKk0Wn2tL5UkckKbGJR4cmePcof2x39YjYOjnLq8kRNK6KL6Te+quh3t0QAMmLCcOm2oezLVRHv0POOFtK3AdiG5pDKckydZqZmOjWzY/I5onO7RbKzlHWJ3L7LJa0dNwm7l3IEbfC0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uHlYsu0k4UPQoKcf2hX1Ab6Ctc1ZAh78YvXdxXed5a9Fi4542VZxKKw68E7KiestmwowZ5iRM6oc5jW0IZFj/lNslXPOVHmzGj6MTAahAPvNVF/KrR8CKOnoJXAht/k6wvNqpgM6NzRoMGQDW7pOPVTLzsLL5GzeEl5K7OJhLOE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQY8ezUt+3yIRNowoKk3DnNjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQAyAE8AMgA4AEwAMABNAEwAXABBAEQATQBJAE4wHhcNMjUwNzA5MDgxMTMwWhcNMjYwNzA5MTQxMTMwWjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQAyAE8AMgA4AEwAMABNAEwAXABBAEQATQBJAE4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALh5WLLtJOFD0KCnH9oV9QG+grXNWQIe/GL13cV3neWvRYuOeNlWcSisOvBOyonrLZsKMGeYkTOqHOY1tCGRY/5TbJVzzlR5sxo+jEwGoQD7zVRfyq0fAijp6CVwIbf5OsLzaqYDOjc0aDBkA1u6Tj1Uy87Cy+Rs3hJeSuziYSzhAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAkVRTKWDlQ8bDCEO/jD7wk38yHbjgrH4H8ud+CGipFCw6iJSe0vrbARyrq8OX5wBYaCGepLOXu7Wrc8U0ato/Lo5XMq62h6z5vIkbfGoPVlGQ7F2bWjRQXr8ciZJ4rYM5HAZnYsX7r2kNDX+/HTWOXEitiU2n88S3yCz9FwWbGZk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
